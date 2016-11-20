@@ -727,6 +727,7 @@ pkginclude_HEADERS += \
 	src/systemd/sd-login.h \
 	src/systemd/sd-messages.h \
 	src/systemd/sd-journal.h \
+	src/systemd/sd-daemon.h \
 	src/systemd/_sd-common.h
 
 EXTRA_DIST += \

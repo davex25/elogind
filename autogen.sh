@@ -29,6 +29,9 @@ if [ -f .git/hooks/pre-commit.sample ] && [ ! -f .git/hooks/pre-commit ]; then
 fi
 
 if which gtkdocize >/dev/null 2>/dev/null; then
+        if [ ! -d ./docs ]; then
+            mkdir ./docs
+        fi
         gtkdocize --docdir docs/ --flavour no-tmpl
         gtkdocargs=--enable-gtk-doc
 else
